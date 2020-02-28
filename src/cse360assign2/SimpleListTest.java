@@ -6,7 +6,7 @@
  * pass and fail cases for each method.
 **/
 
-package Assign1;
+package cse360assign2;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -18,36 +18,45 @@ class SimpleListTest
 	@Test
 	public void simpleListTest()
 	{
-		SimpleList list = new SimpleList();
+		SimpleList num1 = new SimpleList();
+		assertNotNull(num1);
 	}
 	
 	@Test
 	public void testAdd()
 	{
-		fail();
+		SimpleList num1 = new SimpleList();
+		
 	}
 	
 	@Test
 	public void testRemove()
 	{
-		fail();
+		SimpleList num1 = new SimpleList();
+		
 	}
 	
 	@Test
 	public void testCount()
 	{
-		fail();
+		SimpleList num1 = new SimpleList();
+		assertEquals(0, num1.count());
 	}
 	
 	@Test
 	public void testToString()
 	{
-		fail();
+		SimpleList num1 = new SimpleList();
+		
 	}
 	
 	@Test
 	public void testSearch()
 	{
-		fail();
+		SimpleList num1 = new SimpleList();
+		num1.add(3);
+		num1.add(2);
+		num1.add(1);
+		assertNotEquals(0, num1.search(3));
 	}
 }
