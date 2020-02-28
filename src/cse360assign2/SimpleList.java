@@ -28,11 +28,14 @@ public class SimpleList
 	 * Then, if the list is full, then the second to last element
 	 * now becomes the last element while the previous last element
 	 * no longer exists. After the if statement, the parameter is then
-	 * placed at the beginning of the list. 
+	 * placed at the beginning of the list.
+	 * I then added newList which is 50% bigger than 10. If list length
+	 * equal 10 then the everything in list is now added to newList. 
 	 */
 	public void add(int a1)
 	{
 		int num1 = list.length;
+		int[] newList = new int[15];
 		
 		if(num1 > 0)
 		{
@@ -40,7 +43,7 @@ public class SimpleList
 			{
 				if(num1 == 10)
 				{
-					list[x1] = list[x1 - 1];
+					newList[x1] = list[x1];
 				}
 				else
 				{
